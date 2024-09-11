@@ -1,0 +1,99 @@
+/* Reset some default browser styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a consistent font style */
+body {
+    font-family: "Playfair Display", serif;;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Align the content to the center */
+h1, h2 {
+    text-align: center;
+    color: #444;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c63ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #5a54e8;
+}
+
+/* Special styling for reset buttons */
+.resetStreakBtn, .resetRewardBtn {
+    font-size: 0.9rem;
+    background-color: #e0e0e0;
+    color: #333;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 10px 15px;
+}
+
+.resetStreakBtn:hover, .resetRewardBtn:hover {
+    background-color: #d5d5d5;
+}
+
+/* Style for the streak and score */
+.streak, .score {
+    font-weight: bold;
+    color: #6c63ff;
+}
+
+/* Center the content and layout better for mobile */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 768px) {
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .resetStreakBtn, .resetRewardBtn {
+        width: 45%;
+        margin: 10px 2.5%;
+    }
+}
