@@ -14,7 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     submitBtn.addEventListener("click", () => {
         streak += 1;
-        reward += 0.1 * streak;
+        if (streak > 30) {
+            reward += 1;}
+        else{
+            reward += 0.1 * streak;}
 
         // Werte in die Anzeige einfügen
         streakView.innerHTML = streak;
