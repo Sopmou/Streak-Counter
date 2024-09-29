@@ -47,11 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem('reward', reward.toFixed(2));
     });
 //Individuellen Betrag entfernen
-  document.querySelector("#payButton").addEventListener("click", () => {
+   const payBtn = document.querySelector("#payButton")
+  payBtn.addEventListener("click", () => {
     const input =
     document.getElementbyId("#payAmount")
     const currentValue = input.value
-    reward -= currentValue.value
+    reward -= currentValue
     input.value = ""
   });
 });
