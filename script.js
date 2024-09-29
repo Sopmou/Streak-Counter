@@ -14,14 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     submitBtn.addEventListener("click", () => {
         streak += 1;
-        if (streak > 30) {
-            reward += 1;}
-        else{
-            reward += 0.1 * streak;}
+        reward += 0.1 * streak
 
         // Werte in die Anzeige einfügen
         streakView.innerHTML = streak;
         scoreView.innerHTML = reward.toFixed(2);
+
+
 
         // Werte im Local Storage speichern
         localStorage.setItem('streak', streak);
