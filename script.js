@@ -40,6 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector('.resetRewardBtn').addEventListener("click", () => {
         reward = 0;
         scoreView.innerHTML = reward.toFixed(2);
+
+//Individuellen Betrag entfernen
+//document.querySelector("#payButton
         
         // Auch im Local Storage zurücksetzen
         localStorage.setItem('reward', reward.toFixed(2));
