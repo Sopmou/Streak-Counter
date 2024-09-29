@@ -46,14 +46,15 @@ document.addEventListener("DOMContentLoaded", () => {
         // Auch im Local Storage zurücksetzen
         localStorage.setItem('reward', reward.toFixed(2));
     });
+//Individuellen Betrag entfernen
+  document.querySelector("#payButton").addEventListener("click", () => {
+    const input =
+    document.getElementbyId("#payAmount")
+    const currentValue = input.value
+    reward -= input.value
+    input.value = ""
+  });
 });
 
-//Individuellen Betrag entfernen
-document.querySelector("#payButton").addEventListener("click", () => {
-  const input =
-  document.getElementbyId("#payAmount")
-  const currentValue = input.value
-  reward -= input.value
-  input.value = ""
-}
+
         
