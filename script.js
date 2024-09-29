@@ -41,6 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
         reward = 0;
         scoreView.innerHTML = reward.toFixed(2);
 
+
+
+        // Auch im Local Storage zurücksetzen
+        localStorage.setItem('reward', reward.toFixed(2));
+    });
+});
+
 //Individuellen Betrag entfernen
 document.querySelector("#payButton").addEventListener("click", () => {
   const input =
@@ -50,7 +57,3 @@ document.querySelector("#payButton").addEventListener("click", () => {
   input.value = ""
 }
         
-        // Auch im Local Storage zurücksetzen
-        localStorage.setItem('reward', reward.toFixed(2));
-    });
-});
