@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const input =
     document.getElementbyId("#payAmount")
     const currentValue = input.value
-    reward -= input.value
+    reward -= currentValue.value
     input.value = ""
   });
 });
