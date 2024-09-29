@@ -48,7 +48,7 @@ document.querySelector("#payButton").addEventListener("click", () => {
   const currentValue = input.value
   reward -= input.value
   input.value = ""
-  
+}
         
         // Auch im Local Storage zurücksetzen
         localStorage.setItem('reward', reward.toFixed(2));
