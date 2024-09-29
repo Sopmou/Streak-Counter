@@ -50,10 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
    const payBtn = document.querySelector("#payButton")
   payBtn.addEventListener("click", () => {
     const input =
-    document.getElementbyId("#payAmount")
+    document.getElementById("payAmount")
     const currentValue = input.value
-    reward -= currentValue
+    reward -= parseFloat(currentValue);
     input.value = ""
+    scoreView.innerHTML = reward.toFixed(2); // Aktualisiert die Anzeige
+    localStorage.setItem('reward', reward.toFixed(2)); // Speichert im Local Storage
+
   });
 });
 
